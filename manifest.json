@@ -1,0 +1,99 @@
+{
+  "name": "Refind for Chrome",
+  "description": "Enables Refind users to access their venues and recipes from inside of Gmail.",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.google.com https://google.com/ http://localhost:4300; object-src 'self' https://*.google.com;",
+  "version": "0.3.1",
+  "icons": {
+    "16": "img/VenueIcon16.png",
+    "48": "img/VenueIcon48.png",
+    "128": "img/VenueIcon128.png"
+  },
+  "browser_action": {
+    "default_icon": "img/VenueIcon32.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgHHwAuUBTR+TYZ97/R0WF3J5ibYZLhNBGk7bFC/fnJ95+Am3GtzuVDGgwmJqzfwtVaeAyX+jhjWJvBs2A9XK9bz48KR+qPLr0mBIRfwX+iu8i7F8zW5BVbwJgUn0n8N9zZiET6oyxP0zYyysUv2IpAOIjIlKOobEVeFEUMNQPmD7o+YICbSa4FIxJwuLokJGG0K4Rf6m3wLFwmhSK5HCMGLJ2zQDysKSCR9lboKB9M4aFTrYlZFrFjeUUGS9n+GKGrVDvuYH9I0b7Ve9PRKl1+7yiR3Z60V7eL4BawRk6CW126aMjGS07iagQbncbZbT+HZ4TRIgAOovEVDsCzk3MwIDAQAB",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*",
+        "https://inbox.google.com/*"
+      ],
+      "js": [
+        "lib/inboxsdk.js",
+        "lib/jquery-3.3.1.min.js",
+        "lib/ss-utils.js",        
+        "browser/make_browser_element.js",
+        "tree/comparer.js",
+        "js/MenuEventHandlers.js",
+        "js/content.js"        
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "css": [
+        "css/font-awesome.css",
+        "css/style.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://*/portal/Account/*"
+      ],
+      "js": [
+        "registered.js"
+      ],
+      "run_at": "document_start"      
+    },
+    {
+      "matches": [
+        "*://*/environmentBrowser.html"
+      ],
+      "js": [
+        "js/gapi_client.js",
+        "lib/jquery-3.3.1.min.js",        
+        "js/environmentBrowser/environmentBrowser.js"
+      ],
+      "css": [
+        "js/environmentBrowser/environmentBrowser.css"        
+      ],
+      "run_at": "document_end"      
+    }
+  ],
+  "oauth2": {
+    "client_id": "372814543424-j484k02mqgd5c11mer3bildmo43bnhrm.apps.googleusercontent.com",
+    "scopes": [
+      "https://mail.google.com/",
+      "https://www.google.com/m8/feeds",
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
+  },
+  "background": {
+    "scripts": [
+      "js/gapi_client.js",
+      "lib/jquery-3.3.1.min.js",
+      "js/background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "identity",
+    "identity.email",
+    "https://mail.google.com/",
+    "https://inbox.google.com/",
+    "https://*.google.com/",
+    "storage",
+    "windows",
+    "tabs"
+  ],
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "browser/browser.html",
+    "js/environmentBrowser/environmentBrowser.html",
+    "https://venuestorageaccount.blob.core.windows.net/venuesyncservice/VenueEnvironments.txt",
+    "img/*",
+    "fonts/*"    
+  ],
+  "options_ui": {
+      "page": "options/options.html",
+      "open_in_tab": false     
+    }
+}

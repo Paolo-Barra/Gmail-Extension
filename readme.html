@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>readme</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); border-image: initial; background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview ul label { vertical-align: top; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #98c379;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string > .syntax--source,
+.syntax--string .syntax--embedded {
+  color: #abb2bf;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #61afef;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #98c379;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #be5046;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #d19a66;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #e5c07b;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #828997;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #c678dd;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #c678dd;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--interpolation {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation.syntax--begin,
+.syntax--ng.syntax--interpolation.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--function {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation .syntax--function.syntax--begin,
+.syntax--ng.syntax--interpolation .syntax--function.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--bool {
+  color: #d19a66;
+}
+.syntax--ng.syntax--interpolation .syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--pipe,
+.syntax--ng.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--tag {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--attribute-name {
+  color: #e5c07b;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string {
+  color: #c678dd;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--begin,
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--end {
+  color: #abb2bf;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #c678dd;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="venue-for-chrome-gmail-plugin">Venue for Chrome Gmail Plugin</h1>
+<h2 id="overview">Overview</h2>
+<p>Our Gmail plugin uses the InboxSDK library to allow users to use Venue with Gmail. The plugin connects to our services in 2 ways:</p>
+<ol>
+<li>We connect directly to our web services and make AJAX calls to fetch data about the users.</li>
+<li>We connect to the portal to provide the UI to add and edit recipes, edit groups, and other functions.</li>
+</ol>
+<h2 id="setup">Setup</h2>
+<p>In order to connect to Venue, we need to set two settings in the extension options.</p>
+<ol>
+<li><strong>Portal Host.</strong> This is the address where the portal is located.</li>
+<li><strong>Service Host.</strong> This is the adress where the services are located.</li>
+</ol>
+<p>At this point, the extension doesn't have the capacity to add new accounts to Venue. You need to connect to an already existing environment that you have setup on the mobile. The portal host and service host pair need to match up - you need to have added the account with the correct <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">UserAccountId</code> so that everything is aligned.</p>
+<p>The extension options can be accessed by right clicking on the Venue icon in the upper right hand corner of the browser:</p>
+<p><img alt="" src="C:\dev\Console\venue-for-chrome\docs_assets\Options.png"></p>
+<p>and then clicking on Options.</p>
+<p>You should see a screen that looks like this:</p>
+<p><img alt="" src="C:\dev\Console\venue-for-chrome\docs_assets\OptionsScreen.png"></p>
+<h2 id="code">Code</h2>
+<h3 id="content-js">content.js</h3>
+<p>Most of the application code resides in the file <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">content.js</code>. This file is what's called a <strong>content script</strong>. Content scripts form the backbone of the API for Chrome Extensions. They define custom code that can be run on certain pages. You can see in the application manifest (<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">manifest.json</code>) that our <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">content.js</code> file is set to run on <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">mail.google.com</code> and <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">inbox.google.com</code>:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain">"content_scripts": [</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">  </span>{</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">    </span>"matches": [</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">      </span>"https://mail.google.com/*",</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">      </span>"https://inbox.google.com/*"</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">    </span>],</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">    </span>"js": [</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">      </span>"lib/inboxsdk.js",</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">      </span>"lib/jquery-3.3.1.min.js",</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">      </span>"lib/ss-utils.js",</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">      </span>"browser/make_browser_element.js",</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">      </span>"tree/comparer.js",</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">      </span>"content.js"</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">    </span>],</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">    </span>"run_at": "document_end",</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">    </span>"css": [</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">      </span>"style.css"</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">    </span>]</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">  </span>},</span></div></pre><p>You can also see that this script is set to run at <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">document_end</code>, which means it runs after the page has loaded. There are other settings for <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">run_at</code> which you can use to run content scripts at different times in the page lifecycle.</p>
+<h3 id="inboxsdk">InboxSDK</h3>
+<p>Our application works primarily by interacting with the InboxSDK library. This library provides an API that allows us to rewrite the UI of Gmail and add our own custom code.</p>
+<h4 id="navmenu">NavMenu</h4>
+<p>This API handles adding items to the left tree menu, underneath where all the folders are listed.</p>
+<p><img alt="" src="C:\dev\Console\venue-for-chrome\docs_assets\Tree.png"></p>
+<p>We populate this menu by requesting the full venue list of venues from the Venue web service. We then build the tree by adding a node for each venue recursively. This is done in the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">buildChildren</code> function call.</p>
+<p>The tree items also have a dropdown. It is accessed by clicking on the accessory button in the right hand side of the node. This dropdown is populated using the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">onClick</code> property of the accessory button, which provides a callback that has a reference to a jQuery element object. We need to manipulate this object's <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">innerHTML</code>. From <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">buildChildren</code>:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain">children.forEach(x =&gt; {</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">            </span>var routeId = `venues_${x.VenueId}`;</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">            </span>var node = parentNode.addNavItem({</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                </span>name: x.Name,</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                </span>iconUrl: 'https://venue-static-files.s3.us-east-2.amazonaws.com/staticfiles/GmailPlugin/VenueFolder.png',</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                </span>routeID: routeId,</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                </span>accessory: {</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                    </span>type: 'DROPDOWN_BUTTON',</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                    </span>onClick: function(event) {</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                        </span>event.dropdown.el.innerHTML = `</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                            </span>&lt;ul class="venue_dropdown"&gt;</span></div></pre><h4 id="router">Router</h4>
+<p>If you look in <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">buildChildren</code> you can see how we handle clicking on each venue. We use the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Router</code> api. What this does is allows you to provide custom "routes" on top of the standard ones used inside Gmail. These routes allow you to specify a custom list of messages to display. We define a custom route for each venue in the tree, in the format: <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">venue_{VenueId}</code>. We then define the way to get the messages - we call our <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">GetAllVenueItems</code> API (which returns a paged list of memberships for a given VenueId) using the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sdk.Router.handleCustomListRoute</code> method of the RouterSDK, which takes as arguments the route ID you're defining as well as the paging information relevant to the request (offset and max).</p>
+<h4 id="thread-view">Thread view</h4>
+<p>Beyond the tree itself, we also provide custom controls when the user clicks on a specific message. These display on the right hand side of the window, in a 'daughter' window.</p>
+<p><img alt="" src="C:\dev\Console\venue-for-chrome\docs_assets\Daughter.png"></p>
+<p>This is set up using the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sdk.Conversations.registerThreadViewHandler</code> method. This gives us access to the daughter window, and allows us to query the messages being displayed as part of the thread (for example, to find out the email addresses of the other people in the thread), but does not provide any UI except for access to the containing div of the daughter window.</p>
+<p>We need to fill in the UI of this screen using our own custom components. More info in that in the section <a href="#css">CSS</a>.</p>
+<h4 id="toolbar">Toolbar</h4>
+<p>We add a button to the global toolbar that has global controls for your account. When we don't have a <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">UserAccountId</code> yet, this dropdown only presents the Login button (because you're logged out), when we do have a <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">UserAccountId</code> it presents more controls.</p>
+<p><img alt="" src="C:\dev\Console\venue-for-chrome\docs_assets\GlobalDropdown.png"></p>
+<p>We setup this button using the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sdk.Toolbars.addToolbarButtonForApp</code> method. We control the dropdown by providing a click handler for the button when setting it up (the function <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">app_button_click</code> below):</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="syntax--source syntax--js">sdk.Toolbars.addToolbarButtonForApp({</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>title: "Venue",</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>iconUrl: 'https://venue-static-files.s3.us-east-2.amazonaws.com/staticfiles/GmailPlugin/VenueLogo.png',</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>hasDropdown: true,</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>onClick: app_button_click</span></div><div class="line"><span class="syntax--source syntax--js">});</span></div></pre>
+<p>If we look at this function, we see that InboxSDK provides us with a reference to a jQuery element in this click handler. This element represents the dropdown. In order to populate it with our controls, we need to manipulate this element's <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">innerHTML</code>:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain">function app_button_click(event) {</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">        </span>chrome.storage.local.get(['userAccountId'], function(result) {</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">            </span>if (result.userAccountId) {</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                </span>event.dropdown.el.innerHTML = `</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                    </span>&lt;ul class='venue_dropdown'&gt;</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                        </span>&lt;li class='dashboard_button'&gt;</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                            </span>&lt;img src='https://venue-static-files.s3.us-east-2.amazonaws.com/staticfiles/GmailPlugin/Dashboard.png'&gt;</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                            </span>Dashboard</span></div><div class="line"><span class="syntax--text syntax--plain"><span class="leading-whitespace">                        </span>&lt;/li&gt;</span></div></pre><p>This is a common pattern in InboxSDK, you'll also see it when we add dropdowns to the tree items.</p>
+<h3 id="logging-in">Logging In</h3>
+<p>When we go to login to the system we have two goals in mind.</p>
+<ol>
+<li>We need to login inside the browser so that cookies are set properly and when we show the portal inside of a daughter window, it is already logged in with the correct account.</li>
+<li>We need to obtain a <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">UserAccountID</code> as part of this process.</li>
+</ol>
+<p>We tried using the OAuth method that's baked into Chrome extensions, but because they sandbox the browser they use to do that, it did not result in us being logged into the browser.</p>
+<p>Here's what we do instead:</p>
+<ol>
+<li>We send a message called login using <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">chrome.runtime.send</code>.</li>
+<li>We listen for this message in a background script called <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">auth.js</code>. When we receive this message, we use the Chrome API to create a new window and inside that new window, we show the login screen.</li>
+<li>The user uses this window to login to the app, using the normal process.</li>
+<li>When the user finishes logging in, he will be directed to the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">/Account/RegisterResultsForMobile</code> page of the portal, which basically just says you have been logged in correctly.</li>
+<li>The page also raises an event called <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">setUserAccountId</code>. We have a content script called <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">registered.js</code> set to run on the portal <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">RegisterResultsForMobile</code> screen. It contains an event handler that listens for the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">setUserAccountId</code> event.</li>
+<li>This event handler stores the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">UserAccountId</code> from the event in local storage and then sends a <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">close_window</code> message via <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">chrome.runtime.sendMessage</code> that tells the background script to close the window that was used to login.</li>
+<li>In <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">content.js</code> we have an <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">onChanged</code> listener looking for changes to the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">UserAccountId</code>. When the new value is valid, it setups up the ServerEvent listener and enables the full UI.</li>
+</ol>
+<p>This achieves both of our purposes of having an active logged in session in the browser and getting a valid <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">UserAccountId</code> back from the portal. Whenever we need to query the state of the system and see if we're logged in, we just check the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">UserAccountId</code>. If we have one, we're logged in.</p>
+<p>The logout process simply involves clearing the value for <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">userAccountId</code> out of memory. The same <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">onChanged</code> listener will detect an empty value and disable most of the UI for the app.</p>
+<h3 id="interacting-with-the-portal">Interacting with the Portal</h3>
+<p>In order to present the portal inside of an <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">iframe</code> we have to do some kind of not straightforward things. By default, Chrome extensions do not let you show iframes from third-party websites. They also don't let you (easily) change the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">src</code> at runtime. The details about these security restrictions are <a href="https://developer.chrome.com/apps/app_external">here</a>. In order to get around these security restricts, we have a complicated setup:</p>
+<ol>
+<li>We have a static html file <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">browser/browser.html</code>. This has nothing in it but links to the javascript files we use, including <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">browser/browser.js</code>.</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">browser.js</code> does the following:</p>
+<ol>
+<li>Creates the iframe element and adds it to the page.</li>
+<li>Reads the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">path</code> and <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">portalHost</code> settings from the local storage.</li>
+<li>Sets the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">src</code> of the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">iframe</code> to the path from local storage.</li>
+<li>We're able to do this because <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">browser.html</code> is listed in <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">manifest.json</code> as a web accessible resource. We would not be able to do this from inside of a content script.</li>
+</ol>
+</li>
+<li><p>We use the script <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">make_browser_element.js</code> to create the web broswer. It has one function, <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">make_browser_element</code> that takes as arguments:</p>
+<ol>
+<li>The URL which the browser will be presenting.</li>
+<li>A function that will be called back with a reference to the browser (once created).</li>
+</ol>
+<p>It creates an <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">iframe</code> and then sets the source of it to be <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">browser.html</code> using <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">chrome.runtime.getURL</code> to get a full url for that file. (This is only possible because <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">browser.html</code> is a web-accessible resource.) It then storage the path in the local storage, sets some properties of the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">iframe</code> that's been created, and then triggers the callback.</p>
+</li>
+</ol>
+<p>So basically what we're doing is setting the path in local storage every time someone tries to access the browser, and then the browser reads that value from local storage and presents the page that's been set there. The browser itself is an iframe embedded within an iframe. This appears to work because the external iframe is loaded from a static web accessible resource. This is the only way I was able to get an embedded browser to work because of the security restrictions.</p>
+<h4 id="mole-view">Mole View</h4>
+<p>We currently present the portal in a mole view. This view is basically a "window". You can create multiple of them at the same time and you can minimize them and park them at the bottom of the window. This is how the Compose View works in regular Gmail.</p>
+<p><img alt="" src="C:\dev\Console\venue-for-chrome\docs_assets\MoleView.png"></p>
+<p>There are also options for a modal view (popup in middle of screen) and a drawer view (shows on the right side of the screen), but we've decided to use the Mole View because the other two are modal and black out the rest of the screen.</p>
+<p>When we present the browser, we first call <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">make_browser_element</code> to create the browser, and then call <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sdk.Widgets.showMoleView</code> from inside the callback, passing the browser element from the callback into the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">showMoleView</code> method as the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">el</code> property (which represents the content of the mole view).</p>
+<p>For example, the following code shows the Edit Recipe screen from the portal inside of a mole view.</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="syntax--source syntax--js">var recipeId = $(this).attr('id');</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">            </span>var url = `/portal/Outlook#!/tenant/recipes/detail/recipe//${recipeId}/`;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">            </span>make_browser_element(url, function(el) {</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">                </span>sdk.Widgets.showMoleView({</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">                    </span>el: el,</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">                    </span>title: 'Edit Recipe'</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">                </span>});</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">            </span>});</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">            </span>close_dropdowns();</span></div></pre>
+<h3 id="syntax">Syntax</h3>
+<p>Because we have to use <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">innerHTML</code> to build elements on the page in javascript, we're often in the position of writing large amounts of inline javascript.</p>
+<p>In order to make this easier we use the ` backtick syntax to handle large chunks of html inside of javascript. This enables us to:</p>
+<ol>
+<li>Use single and double quotes unescaped inside inline html</li>
+<li>Insert interpolated variables using the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">${}</code> syntax</li>
+<li>Get code hightlight of the html from inside a text editor.</li>
+</ol>
+<p>In general, the format we're using is to open the html block with a backtick, then create a new line then write all the html in the following lines using normal html syntax conventions and line spacing (aka feel free to use as many lines as you need inside the html code block), and then ending the block with a newline and another tick on its own. For example, this is us setting the innerHTML for the dropdown on the NavMenu:</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="syntax--source syntax--js">event.dropdown.el.innerHTML = `</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>&lt;ul class='venue_dropdown'&gt;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>&lt;li class='add_recipe_button'&gt;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">      </span>&lt;img src='https://venue-static-files.s3.us-east-2.amazonaws.com/staticfiles/GmailPlugin/Recipe.png'&gt;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">      </span>Add Recipe</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>&lt;/li&gt;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>&lt;li class='add_cookbook_button'&gt;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">      </span>&lt;img src='https://venue-static-files.s3.us-east-2.amazonaws.com/staticfiles/GmailPlugin/Cookbooks.png'&gt;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">      </span>Add Cookbook</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>&lt;/li&gt;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>&lt;li class='edit_recipes_button'&gt;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">      </span>&lt;img src='https://venue-static-files.s3.us-east-2.amazonaws.com/staticfiles/GmailPlugin/ListIcon.png'&gt;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">      </span>List Recipes</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>&lt;/li&gt;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>&lt;/ul&gt;</span></div><div class="line"><span class="syntax--source syntax--js">`;</span></div></pre>
+<h3 id="handling-clicks">Handling clicks</h3>
+<p>Because all of the html we're using is added to the page via javascript, we need to use <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">$(document).on</code> syntax. This allows you to add jQuery event handlers to elements that will be added to the page in the future, not just elements that are already there.</p>
+<p>We set these up all in the function <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">init_event_handlers()</code>. Here is an example of when we add the click handler for the recipe button:</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="syntax--source syntax--js">$(document).on('click', ".recipe_button", function() {</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>var recipeId = $(this).attr('id');</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>var url = `/portal/Outlook#!/tenant/recipes/detail/recipe//${recipeId}/`;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>make_browser_element(url, function(el) {</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>sdk.Widgets.showMoleView({</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">      </span>el: el,</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">      </span>title: 'Edit Recipe'</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>});</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>});</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>close_dropdowns();</span></div><div class="line"><span class="syntax--source syntax--js">});</span></div></pre>
+<p>This is a pretty standard jQuery way to handle clicks, but I thought I should document it. If we want to pass in some specific information to the function call, we set an attribute on the html element that we're clicking (in the example above, we need to know the recipe id of the recipe we've clicked on in order to edit it), and then interrogate it in the click handler to read that value. In the above example we use the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">id</code> attribute of the element, but we could just as easily assign the element a custom attribute (like <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;div class='recipe_button' recipeId='%RECIPEID%'&gt;</code>), and then read that attribute in the exact same way.</p>
+<p>Note that I explored using a more feature-rich javascript framework, with data-binding (I looked into angular, react, and vue), but all of them presented major hurdles considering that InboxSDK requires us to interact with it in multiple places using inline html with <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">innerHTML</code> calls, and just in general the strict content security policy rules for extensions make it seem like too big a hurdle, especially considering the small amount of code currently in the application. For now, I think we're stuck using old school jQuery, but that may be something to explore in the future.</p>
+<h3 id="refreshing-the-tree">Refreshing the tree</h3>
+<p>The tree view needs to be updated in real time as venues are added to and removed from the system. This could happen at any time - we add venues when we create new recipes, but that can happen from any device and doesn't necessarily need to happen on the browser, and it can also just happen when we receive a new email message.</p>
+<p>Therefore, we need a way to push updates to the extension.</p>
+<p>In lieu of setting up MQ and reading all the updates that we are already sending to the mobile (which might be a lot to do inside of a chrome extension), we are instead using the Server Events library. You can read more about that <a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events">here</a>.</p>
+<p>Because we're using ServiceStack to generate these events on the server side, we also use ServiceStack's library on the client side to read those events. You'll see that <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">lib/ss-utils.js</code> is included as a content script. This library sets up a connection to our server and then streams the messages.</p>
+<p>It's supposed to be able to be typed, so you can setup the event handler in javascript to only respond to one static class of events being sent from the server, but we're having some trouble getting that working. You can read more about the ServiceStack library for handling server events <a href="https://docs.servicestack.net/server-events">here</a>.</p>
+<p>In lieu of being able to use the type system, you'll see when we parse server events, we instead interrogate the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Message</code> property of the object, to see if the message matches the value <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Venues changed</code>:</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="syntax--source syntax--js">function setup_tree_listener() {</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>chrome.storage.local.get(['userAccountId', 'serviceHost'], function(result) {</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>var url = `${result.serviceHost}/venue/event-stream?channel=${result.userAccountId}`;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>var source = new EventSource(`${result.serviceHost}/venue/event-stream?channel=${result.userAccountId}`);</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>$(source).handleServerEvents({</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">      </span>handlers: {</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">        </span>onMessage: function (msg, e) { // fired after every message</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">          </span>console.log(msg);</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">          </span>if (msg.Message === "Venues changed") {</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">            </span>needs_refresh = true;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">          </span>}</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">        </span>},</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">      </span>}</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>});</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>});</span></div><div class="line"><span class="syntax--source syntax--js">}</span></div></pre>
+<p>Ideally, instead of having the handler be <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">onMessage</code>, we would have a handler called something like <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">VenueTreeChanged</code> (the type of the event on the server) and we would only respond to that. Something like:</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="syntax--source syntax--js">handlers: {</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>VenueTreeChanged: function (msg, e) { // fired after every message</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">    </span>needs_refresh = true;</span></div><div class="line"><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>},</span></div><div class="line"><span class="syntax--source syntax--js">}</span></div></pre>
+<p>When we had this in the code, however, none of the handlers were being called. I'm not sure what the problem was there.</p>
+<p>These events are triggered on the server whenever a <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">ReturnedVenueMembers</code> object is sent out that contains either an added or deleted venue in its payload. They are also sent out when recipes are deleted. They may need to be sent out from the server more in order to keep the tree up to date, but so far this strategy is more or less working.</p>
+<p>However, especially when added new recipes that are parsing a long backlog and creating a lot of new subvenues, these events tend to come in too quickly to actually use them to trigger a full venue tree refresh. We had that code in in the past and the app would just crash (the Gmail screen would reload). Therefore we take a deferred approach where we simply set the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">needs_refresh</code> global to be <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">true</code> and move on.</p>
+<p>Instead there is a method called <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">init_refresh</code> which uses <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">setInterval</code> to check for changes to this property every 5 seconds. This definitely could be improved, either by being more judicious about sending the events, or using a different strategy other than polling to check if the tree needs updating, but it was the most expedient one for an MVP and that's why we're using it.</p>
+<h3 id="css">CSS</h3>
+<p>We use a small library of css classes (see <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">styles.css</code>) to build most of the custom UI that we display in the app. Almost everything is built with <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;ul&gt;</code> tags with the individual list items representing one full-width button. The class is called <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">.venue_dropdown</code>.</p>
+<pre class="editor-colors lang-css"><div class="line"><span class="syntax--source syntax--css">ul.venue_dropdown {</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>list-style: none;</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>padding: 0;</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>margin: 0;</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>min-width: 200px;</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>font-size: 13px;</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>line-height: 1em;</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>text-align: left;</span></div><div class="line"><span class="syntax--source syntax--css">}</span></div><div class="line"><span class="syntax--source syntax--css"></span></div><div class="line"><span class="syntax--source syntax--css">ul.venue_dropdown li {</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>padding: 10px;</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>cursor: pointer;</span></div><div class="line"><span class="syntax--source syntax--css">}</span></div><div class="line"><span class="syntax--source syntax--css"></span></div><div class="line"><span class="syntax--source syntax--css">ul.venue_dropdown li:hover {</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>background: #eee;</span></div><div class="line"><span class="syntax--source syntax--css">}</span></div><div class="line"><span class="syntax--source syntax--css"></span></div><div class="line"><span class="syntax--source syntax--css">ul.venue_dropdown li img {</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>float:left;</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>height: 1.3em;</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>width: 1.3em;</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>margin-top: -.15em;</span></div><div class="line"><span class="syntax--source syntax--css"><span class="leading-whitespace">  </span>margin-right: 10px;</span></div><div class="line"><span class="syntax--source syntax--css">}</span></div></pre>
+<p>Each list item has an optional space for an <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;img&gt;</code> tag inside of it. We generally try to add an icon for each list item. We store the icons on Amazon S3 and load them directly from there.</p>
+<p>For example, there are the buttons for the menu that shows up when you click on the Venue button in the tree:</p>
+<pre class="editor-colors lang-html"><div class="line"><span class="syntax--text syntax--html syntax--basic">&lt;ul class='venue_dropdown'&gt;</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">  </span>&lt;li class='add_recipe_button'&gt;</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">    </span>&lt;img src='https://venue-static-files.s3.us-east-2.amazonaws.com/staticfiles/GmailPlugin/Recipe.png'&gt;</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">    </span>Add Recipe</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">  </span>&lt;/li&gt;</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">  </span>&lt;li class='add_cookbook_button'&gt;</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">    </span>&lt;img src='https://venue-static-files.s3.us-east-2.amazonaws.com/staticfiles/GmailPlugin/Cookbooks.png'&gt;</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">    </span>Add Cookbook</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">  </span>&lt;/li&gt;</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">  </span>&lt;li class='edit_recipes_button'&gt;</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">    </span>&lt;img src='https://venue-static-files.s3.us-east-2.amazonaws.com/staticfiles/GmailPlugin/ListIcon.png'&gt;</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">    </span>List Recipes</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="leading-whitespace">  </span>&lt;/li&gt;</span></div><div class="line"><span class="syntax--text syntax--html syntax--basic">&lt;/ul&gt;</span></div></pre>
+<p>This is what it looks like rendered:</p>
+<p><img alt="" src="C:\dev\Console\venue-for-chrome\docs_assets\DropdownRendered.png"></p>
+<h2 id="directions-to-install">Directions To Install</h2>
+<ol>
+<li>Make sure Chrome is in 'DeveloperMode'<ol>
+<li>Go to <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">chrome://extensions</code> in chrome</li>
+<li>Toggle the switch in the top right to go into developer mode.</li>
+</ol>
+</li>
+<li>You should then see a button called 'Load Unpacked'</li>
+<li>Click that button, and then pick this directory.</li>
+<li>You will now have the app loaded.</li>
+</ol></body>
+</html>

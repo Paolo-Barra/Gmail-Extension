@@ -1,0 +1,44 @@
+.options {
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+.options label {
+  display: block;
+  text-transform: uppercase;
+  color: #555;
+  font-size: .8em;
+}
+
+.options_component {
+  display:block;
+  margin-bottom: 14px;
+  width: 100%;
+  font-size: 14px !important;
+}
+
+input[type=text].options_component {
+  border-radius: 3px;
+  padding: 5px 0;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+select.options_component {
+  margin-top: 5px;
+  background: #eee;
+  height: 2em;
+  border:0;
+  outline:0;
+}
+
+button.options_component {
+  background: #eee;
+  border: 0;
+  padding: 5px;
+}
+
+#status {
+  margin: 10px 0;
+}

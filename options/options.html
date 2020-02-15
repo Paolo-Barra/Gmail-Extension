@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Refiind for Chrome Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="options">
+    <label>Portal Host</label>
+    <input class="options_component" type="text" id="portalHost" value="https://refinddev.commondesk.info">
+
+    <label>Full Portal Host</label>
+    <input class="options_component" type="text" id="fullPortalHost" value="https://refinddev.commondesk.info">
+
+    <label>Service Host</label>
+    <input class="options_component" type="text" id="serviceHost" value="https://refinddev.commondesk.info">
+
+    <label>UserAccountId</label>
+    <input class="options_component" type="text" id="userAccountId" value="9cf9ff65-20b8-4ca3-b65d-8ab60aa07337">
+
+    <label>Theme</label>
+    <select class="options_component" id="theme">
+      <option value="color">Color</option>
+      <option value="gray">Gray</option>
+    </select>
+
+    <!-- <button id="environmentsButton" class="options_component">Switch Environment</button> -->
+
+    <div id="status"></div>
+    <button id="save" class="options_component">Save</button>
+
+    <script src="options.js"></script>
+  </div>
+</body>
+</html>
